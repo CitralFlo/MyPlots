@@ -7,7 +7,9 @@ import plot from '../../../src/assets/plot-junglewoods.png';
 
 function Plots() {
     return (
-        <div className=""></div>
+        <div className="plot">
+            <img src={plot} alt="plot" />
+        </div>
     );
 }
 
