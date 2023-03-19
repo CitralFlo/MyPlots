@@ -1,20 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
 import './plot.css';
 
 
-import plot from '../../../src/assets/plot-junglewoods.png';
+import plot from '../../plot-junglewoods.png';
 
 function Plots() {
     return (
         <div className="plot">
-            <img src={plot} alt="plot" />
+            <img src={plot} alt="plot" className="dzialeczka1" />
         </div>
     );
 }
 
+export default Plots;
 
-
+/*
 function App() {
     return (
         <div className="App">
@@ -37,3 +37,4 @@ function App() {
 }
 
 export default App;
+*/
