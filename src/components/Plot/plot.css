@@ -3,6 +3,18 @@
     border : 8px solid white;
 }
 .dzialeczka1 {
-    width: 40%;
+    display: inline-block;
+    width: 100%;
     height: auto;
+}
+.single-plot {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+.next {
+    position: absolute;
+    top:50%;
+    right: 0;
 }
