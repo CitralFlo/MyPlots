@@ -8,7 +8,7 @@ import {Plots} from "./components/Plot/Plots";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Plots />
+    <Plots/>
 
     </React.StrictMode>
 );
