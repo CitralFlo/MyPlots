@@ -13,8 +13,24 @@
     display: inline-block;
     position: relative;
 }
-.next {
+button {
     position: absolute;
     top:50%;
+}
+.next {
     right: 0;
+}
+.prev {
+    left: 0;
+}
+label {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    border-radius: 50%;
+    border: solid 3px grey;
+    background-color: grey;
+    height: 30px;
+
 }
