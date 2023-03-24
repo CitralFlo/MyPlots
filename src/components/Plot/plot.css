@@ -13,7 +13,7 @@
     display: inline-block;
     position: relative;
 }
-button {
+.next, .prev {
     position: absolute;
     top:50%;
 }
@@ -23,7 +23,7 @@ button {
 .prev {
     left: 0;
 }
-label {
+.counter{
     position: absolute;
     top: 2px;
     right: 2px;
