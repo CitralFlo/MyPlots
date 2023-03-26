@@ -3,10 +3,12 @@ import {plots} from './Plot.js';
 import React, {useState} from "react";
 
 
-
 function PlotSetup(props) {
+    const item = props.item;
     const [currentPlot, setCurrentPlot] = useState(0);
-    const maxPictures = 2, minPictures = 0;
+
+    const minPictures = 0, maxPictures = item.links.length - 1;
+
     const nextPlot = () => {
         setCurrentPlot(currentPlot + 1);
     };
@@ -14,34 +16,19 @@ function PlotSetup(props) {
     const prevPlot = () => {
         setCurrentPlot(currentPlot - 1);
     };
-    let plotImage;
     const displayCurrent = currentPlot + 1;
 
     return (
         <div className="single-plot">
             {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>Prev</button>}
             {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>Next</button>}
-            <img src={props.link1} alt={props.name} className="dzialeczka1" />;
 
-            switch (currentPlot)
-            case 0:
-            plotImage = <img src={props.link1} alt={props.name} className="dzialeczka1" />;
-            break;
-            case 1:
-            plotImage = <img src={props.link2} alt={props.name} className="dzialeczka1" />;
-            break;
-            case 2:
-            plotImage = <img src={props.link3} alt={props.name} className="dzialeczka1" />;
-            break;
-            default:
-            plotImage = <img src={props.link1} alt={props.name} className="dzialeczka1" />;
-            break;
-            {plotImage}
+            {currentPlot > minPictures && <img src={item.links[currentPlot - 1]} alt={item.name} className="previous-pic"/>}
+            <img src={item.links[currentPlot]} alt={item.name} className="picture"/>
+            {currentPlot < maxPictures && <img src={item.links[currentPlot + 1]} alt={item.name} className="next-pic"/>}
 
-            <label className="counter">{displayCurrent} / 3</label>
-
-            <img src={props.link1} alt="plot" className="dzialeczka1"/>
-            <h1>{props.name} - Plot {displayCurrent}</h1>
+            <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
+            <h1>Działka {item.name} nr {item.serial} </h1>
         </div>
     )
 }
@@ -49,18 +36,17 @@ function PlotSetup(props) {
 
 export const Plots = ({}) => {
     return (
-        <div>
-            <h1> Moje działki</h1>
-            <p> Oto stworzone moimi rękoma działki, ze specjalnie zcraftowanych pomysłów na potrzeby właściela</p>
+        <div className="plots-div">
+            <h1 className="plots-title">Moje działki</h1>
+            <p className="plots-desc">Oto stworzone moimi rękoma działki, ze specjalnie zcraftowanych pomysłów na potrzeby właściela</p>
 
-            <div className="lool">
 
-                {plots.map((item, index) => {
-                    <PlotSetup name={item.name} link1={item.link1} link2={item.link2} link3={item.link3} />
+            {plots.map((item, index) => {
+                return (<PlotSetup item={item}/>);
 
-                })}
+            })}
 
-            </div>
+
         </div>
 
     )
