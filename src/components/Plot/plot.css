@@ -1,18 +1,35 @@
 .plots-div {
-
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
 
 .single-plot {
+    overflow: hidden;
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    border: black solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.single-plot:hover {
 
 }
 
 .plots-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
 
 .plots-desc {
-    position: center;
-border-bottom: black solid 3px;
+margin-top: 0;
+    border-bottom: black solid 3px;
 
 }
 
@@ -29,28 +46,41 @@ border-bottom: black solid 3px;
 
 }
 
+.picture {
+
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
 
 .plot {
     height: 100vh;
     border: 8px solid white;
 }
 
-.picture {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
 
-.single-plot {
-    width: 50%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-}
+
+
 
 .next, .prev {
     position: absolute;
+    width: 40px;
+    height: 40px;
     top: 50%;
+    border: none;
+    background-color: #464545;
+    border-radius: 100%;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+
+}
+.next:hover, .prev:hover {
+
+    background-color: #171717;
 }
 
 .next {
@@ -62,13 +92,18 @@ border-bottom: black solid 3px;
 }
 
 .counter {
+    font-family: 'Bungiee', cursive;
     position: absolute;
-    top: 2px;
-    right: 2px;
+    height: 45px;
+    width: 45px;
+    top: 10px;
+    right: 10px;
     color: white;
     border-radius: 50%;
-    border: solid 3px grey;
     background-color: grey;
-    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
 
 }

@@ -1,13 +1,11 @@
 body {
   margin: 2vw;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Audiowide', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   color: #e5bcff;
-  background: linear-gradient(90deg, rgb(26, 26, 26) 0%, rgb(94, 94, 94) 100%);
+  background-color: rgb(26, 26, 26);
 }
 
 code {

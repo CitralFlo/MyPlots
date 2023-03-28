@@ -20,8 +20,8 @@ function PlotSetup(props) {
 
     return (
         <div className="single-plot">
-            {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>Prev</button>}
-            {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>Next</button>}
+            {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>&lt;</button>}
+            {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
             {currentPlot > minPictures && <img src={item.links[currentPlot - 1]} alt={item.name} className="previous-pic"/>}
             <img src={item.links[currentPlot]} alt={item.name} className="picture"/>
@@ -29,12 +29,13 @@ function PlotSetup(props) {
 
             <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
             <h1>Działka {item.name} nr {item.serial} </h1>
+            <h2>{item.desc}</h2>
         </div>
     )
 }
 
 
-export const Plots = ({}) => {
+export const Plots = () => {
     return (
         <div className="plots-div">
             <h1 className="plots-title">Moje działki</h1>
