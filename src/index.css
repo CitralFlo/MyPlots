@@ -1,10 +1,10 @@
 body {
   margin: 2vw;
-  font-family: 'Audiowide', cursive;
+  font-family: 'Prompt', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: #e5bcff;
+  color: #f9f5fd;
   background-color: rgb(26, 26, 26);
 }
 
