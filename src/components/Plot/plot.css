@@ -27,17 +27,13 @@
 }
 
 .plots-title {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
 
 }
 
 .plots-desc {
-    margin-top: 0;
-    padding-bottom: 15px;
-    border-bottom: black solid 3px;
+    position: center;
+border-bottom: black solid 3px;
+
 }
 
 .plot-desc {
@@ -62,14 +58,12 @@
 
 }
 
-.plot {
-    height: 100vh;
-    border: 8px solid white;
+.single-plot {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    position: relative;
 }
-
-
-
-
 
 .next, .prev {
     position: absolute;
@@ -132,7 +126,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     /* Styles for screens with a maximum width of 768 pixels */
 
     .single-plot {

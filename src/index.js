@@ -4,13 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Plots} from "./components/Plot/Plots";
 import {NavBar} from "./components/NavBar/NavBar";
+import {About} from "./components/About/About";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-
+        <NavBar/>
         <Plots/>
+        <About/>
 
     </React.StrictMode>
 );

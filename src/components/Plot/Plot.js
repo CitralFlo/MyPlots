@@ -1,4 +1,3 @@
-
 export const plots = [
     {
         serial: 1,

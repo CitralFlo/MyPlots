@@ -1,22 +1,53 @@
 .navbar {
-    width: 90%;
-    height: 60px;
-    position: absolute;
-
-    top: 0;
-    margin: 0;
-    padding: 20px;
     display: flex;
-
-    flex-direction: row;
-    font-size: 30px;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
-.lang-button {
-    height: 20px;
-}
-.logo {
-    height: 30px;
-    width: auto;
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-button,
+.lang-button {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover,
+.lang-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+.backButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+}
+
+.arrowUp {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: #9d9d9d 4px solid;
+    background: #9d9d9d;
+    transition: 0.3s ease-in-out;
+}
+
+.arrowUp:hover {
+    background: #333;
+    border: #333 4px solid;
 }
