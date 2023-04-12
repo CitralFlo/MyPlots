@@ -33,5 +33,6 @@ const popup = {
     transform: 'translate(-50%, -50%)',
     padding: '20px',
     zIndex: 1000,
-    background: '#383838FF',
+    background: 'rgba(56,56,56,0.68)',
+    borderRadius: '10px',
 }
