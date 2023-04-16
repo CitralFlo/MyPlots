@@ -27,7 +27,7 @@ function PlotSetup(props) {
             {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
 
-            <img src={item.links[currentPlot]} alt={item.name} className="picture" onClick={() => setIsOpen(true)}/>
+            <img src={item.links[currentPlot]} alt={item.name} className="picture" loading="lazy" onClick={() => setIsOpen(true)}/>
 
             <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
             <h1 className="plot-title">Działka {item.name} nr {item.serial} </h1>
@@ -39,7 +39,7 @@ function PlotSetup(props) {
                 {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
 
-                <img src={item.links[currentPlot]} alt={item.name} className="popup-pic"
+                <img src={item.links[currentPlot]} alt={item.name} loading="lazy" className="popup-pic"
                      onClick={() => setIsOpen(true)}/>
 
                 <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
@@ -59,7 +59,7 @@ export const Plots = () => {
                 potrzeby właściela</p>
 
             <div className="plots">
-                {plots.map((item) => {
+                {plots.map((item, index) => {
                     return (<PlotSetup item={item}/>);
 
                 })}
