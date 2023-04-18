@@ -60,7 +60,7 @@ export const Plots = () => {
 
             <div className="plots">
                 {plots.map((item, index) => {
-                    return (<PlotSetup item={item}/>);
+                    return (<PlotSetup item={item} key={index} />);
 
                 })}
             </div>
