@@ -7,6 +7,7 @@ import React, {useState} from "react";
 function PlotSetup(props) {
     const item = props.item;
     const [currentPlot, setCurrentPlot] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
     const [isOpen, setIsOpen] = useState(false)
     const minPictures = 0, maxPictures = item.links.length - 1;
 
@@ -26,9 +27,19 @@ function PlotSetup(props) {
             {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>&lt;</button>}
             {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
+            <div style={{position: 'relative', margin: '0', padding: '0'}}>
+                <img src={item.links[currentPlot]}
+                     alt={item.name}
+                     className="picture"
+                     loading="lazy"
 
-            <img src={item.links[currentPlot]} alt={item.name} className="picture" loading="lazy"
-                 onClick={() => setIsOpen(true)}/>
+                     onLoad={() => setIsLoading(false)}
+                     onError={() => setIsLoading(false)}
+                     onClick={() => setIsOpen(true)}
+                />
+                {isLoading && <div className="spinner show"/>}
+            </div>
+
 
             <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
             <h1 className="plot-title">Działka {item.name} nr {item.serial} </h1>
@@ -39,10 +50,14 @@ function PlotSetup(props) {
                 {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>&lt;</button>}
                 {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
-
-                <img src={item.links[currentPlot]} alt={item.name} loading="lazy" className="popup-pic"
-                     onClick={() => setIsOpen(true)}/>
-
+                <div style={{position: 'relative', margin: '0', padding: '0'}}>
+                    < img src={item.links[currentPlot]} alt={item.name} loading="lazy" className="popup-pic"
+                          onClick={() => setIsOpen(true)}
+                          onLoad={() => setIsLoading(false)}
+                          onError={() => setIsLoading(false)}
+                    />
+                    {isLoading && <div className="spinner show"/>}
+                </div>
                 <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
                 <h1 className="popup-title">{item.name}</h1>
             </PopupPicture>
