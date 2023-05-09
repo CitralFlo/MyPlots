@@ -1,3 +1,18 @@
 .About {
-    height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: center;
+    align-items: center;
+    marign: auto;
+    margin-top: 20px;
+    padding: 20vh;
+
+}
+.Title {
+    position: center;
+}
+.About-3D {
+    width: 50vh;
+    height: 50vh;
 }
