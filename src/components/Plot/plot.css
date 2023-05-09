@@ -85,6 +85,7 @@ border-bottom: black solid 3px;
     border: none;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     cursor: pointer;
+    z-index: 1;
 
 }
 .picture:hover {
@@ -103,6 +104,7 @@ border-bottom: black solid 3px;
     width: 40px;
     height: 40px;
     top: 50%;
+    z-index: 100;
     border: none;
     background-color: #464545;
     border-radius: 100%;

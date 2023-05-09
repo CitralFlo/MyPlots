@@ -50,7 +50,7 @@ function PlotSetup(props) {
                 {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>&lt;</button>}
                 {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
-                <div style={{position: 'relative', margin: '0', padding: '0'}}>
+                <div style={{position: 'relative', margin: '0, 0, 0, 0', padding: '0'}}>
                     < img src={item.links[currentPlot]} alt={item.name} loading="lazy" className="popup-pic"
                           onClick={() => setIsOpen(true)}
                           onLoad={() => setIsLoading(false)}
