@@ -32,7 +32,6 @@ function PlotSetup(props) {
                 <img src={item.links[currentPlot]}
                      alt={item.name}
                      className="picture"
-                     loading="lazy"
 
                      onLoad={() => setIsLoading(false)}
                      onError={() => setIsLoading(false)}
