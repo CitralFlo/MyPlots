@@ -4,6 +4,15 @@
     text-align: center;
 
 }
+
+.preload-images {
+    display: none;
+}
+
+.preload-images img {
+    display: none;
+}
+
 .plots {
     display: flex;
     flex-wrap: wrap;

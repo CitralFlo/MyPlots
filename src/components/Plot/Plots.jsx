@@ -24,6 +24,7 @@ function PlotSetup(props) {
     return (
 
         <div className="single-plot">
+
             {currentPlot > minPictures && <button className="prev" onClick={prevPlot}>&lt;</button>}
             {currentPlot < maxPictures && <button className="next" onClick={nextPlot}>&gt;</button>}
 
@@ -37,6 +38,11 @@ function PlotSetup(props) {
                      onError={() => setIsLoading(false)}
                      onClick={() => setIsOpen(true)}
                 />
+                <div className="preload-images">
+                    {item.links.map((link, index) => (
+                        <img src={link} alt={`Preloaded ${index + 1}`} key={index} />
+                    ))}
+                </div>
                 {isLoading && <div className="spinner show"/>}
             </div>
 
