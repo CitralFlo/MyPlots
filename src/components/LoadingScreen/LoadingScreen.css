@@ -1,0 +1,44 @@
+.loading-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+    flex-direction: column;
+    /* Add additional styles as needed */
+}
+
+.loading-screen img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+}
+
+.loading-bar {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+.progress-value {
+    animation: load 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #8965f6, #fda085);
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
