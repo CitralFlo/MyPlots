@@ -1,0 +1,6 @@
+.dark {
+    background-color: var(--main-bg-color);
+    color: white;
+    transition: background-color 2s ease ;
+}
+
