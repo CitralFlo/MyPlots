@@ -17,8 +17,8 @@ export const Footer = () => {
     return (
         <div className="Footer">
             <div className="Links">
-                <h3 onClick={() => setActive(!active)}>{t('Footer.Links')} {active ? "▽" : "△"}</h3>
-                <ul className={`'Link-list ${active ? "" : "active"}`}>
+                <h3 className={`links-button ${!active ? "" : "active"}`} onClick={() => setActive(!active)}>{t('Footer.Links')} {active ? "△" : "▽"}</h3>
+                <ul className={`link-list ${active ? "" : "active"}`}>
                     <li>
                         <a href="https://github.com/CitralFlo" target="_blank" className="Link-element" rel="noopener noreferrer">
                             <img src="/assets/Footer/github.svg" alt="GitHub" className="icon-img"/>

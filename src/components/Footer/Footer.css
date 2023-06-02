@@ -9,6 +9,10 @@
     color: var(--main-text-color);
     background-color: var(--secondary-bg-color);
 }
+.Footer h3 {
+    margin:0;
+}
+
 
 .icon {
     width: 50px;
@@ -26,39 +30,56 @@
     align-items: center;
 }
 
-.Link-list li {
+.link-list.active {
     display: none;
 }
 
-.Link-list active {
+.links-button {
+    transition: transform 0.5s;
+    transform: translateY(4rem);
+    margin-top: 2px;
+    margin-bottom: 0;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    position: center;
+    align-content: center;
+    align-items: center;
+}
+
+.links-button.active {
+    height: fit-content;
+    transform: translateY(0);
+    transition: transform 0.5s;
+
+}
+
+.link-list {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin:0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--main-bg-color);
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
     z-index: 2;
     transition: 0.5s ease-in-out;
 }
 
-.Link-list li:hover {
+.link-list li:hover {
     color: var(--accent-color);
     text-shadow: #cccccc 0 0 20px;
     transition: 0.5s ease-in-out;
 
 }
 
+
 .Link-element {
     text-decoration: none;
     color: var(--main-text-color);
-    position: center;
-    align-items: center;
+    align-items: self-start;
     display: flex;
     height: 40px;
 }
@@ -69,12 +90,6 @@
 
 }
 
-.Links h3 {
-    margin: 0;
-    text-align: center;
-    display: grid;
-
-}
 
 .Footer-button {
     width: 100%;
@@ -104,7 +119,7 @@
     align-items: center;
     position: center;
     cursor: crosshair;
-    color: var(--accent-color);
+    color: var(--secondary-text-color);
 }
 
 @media screen and (max-width: 1000px) {

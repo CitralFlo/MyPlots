@@ -20,7 +20,7 @@ const LanguageSwitch = () => {
                 <FaLanguage className="switch-icon"/>
                 <HiChevronDoubleDown className={`switch-arrow ${active ? "" : "active"}`}/>
             </button>
-            <div className={`link-list ${active ? "" : "active"}`}>
+            <div className={`language-list ${active ? "" : "active"}`}>
                 <button onClick={() => handleLanguageChange('pl')}>
                     <div className="flag-stripe" style={{backgroundColor: '#fff'}}></div>
                     <div className="flag-stripe" style={{backgroundColor: '#dc143c'}}></div>

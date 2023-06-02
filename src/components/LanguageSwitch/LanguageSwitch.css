@@ -32,18 +32,18 @@
 
 }
 
-.link-list {
+.language-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
-.link-list.active {
+.language-list.active {
     display: none;
     opacity: 0;
 }
-.link-list button {
+.language-list button {
     width: 20px;
     height: 20px;
 }
