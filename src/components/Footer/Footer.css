@@ -1,0 +1,111 @@
+.Footer {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: center;
+    align-items: center;
+}
+
+.Link-list li {
+    display: none;
+}
+
+.Link-list active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #464545;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+
+.Link-list li:hover {
+    color: white;
+    text-shadow: #cccccc 0 0 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.Link-element {
+    text-decoration: none;
+    color: darkgray;
+    position: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+}
+
+.Link-element:hover img {
+    filter: invert(30%);
+    transition: 0.5s ease-in-out;
+
+}
+
+.Links h3 {
+    margin: 0;
+    text-align: center;
+    display: grid;
+}
+
+.Footer-button {
+    width: 100%;
+    height: 40px;
+    background-color: #464545;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Footer-back-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+.Footer-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    cursor: crosshair;
+}
+
+@media screen and (max-width: 1000px) {
+    .Footer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+}

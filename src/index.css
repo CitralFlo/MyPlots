@@ -1,30 +1,68 @@
 :root {
-  --main-bg-color: #1a1a1a;
-  --main-text-color: #9d9d9d;
-}
-
-.dark {
     --main-bg-color: #1a1a1a;
+    --secondary-bg-color: #333;
+
     --main-text-color: #9d9d9d;
+    --secondary-text-color: #858585;
+
+    --accent-color: #313131;
+    --secondary-accent-color: #9d9d9d;
 }
 
 .light {
-    --main-bg-color: #d37e7e;
+    --main-bg-color: #dadada;
+    --secondary-bg-color: #f5f5f5;
+
     --main-text-color: #333;
+    --secondary-text-color: #5e5e5e;
+
+    --accent-color: #282828;
+    --secondary-accent-color: #1f1f1f;
 }
 
+.red {
+    --main-text-color: #f8f2dc;
+    --secondary-text-color: #dea47e;
+
+    --accent-color: #881600;
+    --secondary-accent-color: #fc7b7b;
+}
+
+.indigo {
+    --main-text-color: #dbf8fa;
+    --secondary-text-color: #dbdcfa;
+
+    --accent-color: #424476;
+    --secondary-accent-color: #7d82e3;
+}
+
+.salmon {
+    --main-text-color: #ffffeb;
+    --secondary-text-color: #efefd0;
+
+    --accent-color: #f3938c;
+    --secondary-accent-color: #fac6e5;
+}
+
+.purple {
+    --main-text-color: #c8abfd;
+    --secondary-text-color: #dfa2fa;
+
+    --accent-color: #866aef;
+    --secondary-accent-color: #6e20fd;
+}
 
 body {
-  margin: 2vw;
-  font-family: 'Prompt', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 2vw;
+    font-family: 'Prompt', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  color: #9d9d9d;
-  background-color: var(--main-bg-color);
+    color: #9d9d9d;
+    background-color: var(--main-bg-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

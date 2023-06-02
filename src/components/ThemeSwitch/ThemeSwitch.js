@@ -12,11 +12,9 @@ function ThemeSwitch() {
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
         if (darkMode) {
-            document.body.classList.remove("dark");
             document.body.classList.add("light");
         } else {
             document.body.classList.remove("light");
-            document.body.classList.add("dark");
         }
     }
 
@@ -25,8 +23,12 @@ function ThemeSwitch() {
     }, []);
 
     const applyTheme = (currentTheme) => {
-        document.body.classList.remove("red", "blue", "green", "yellow", "purple");
-        document.body.classList.add(currentTheme);
+        if (currentTheme) {
+            document.body.classList.remove("red", "indigo", "salmon", "purple");
+            document.body.classList.add(currentTheme);
+        } else {
+            document.body.classList.remove("red", "indigo", "salmon", "purple");
+        }
     };
 
     function changeTheme(theme) {
@@ -34,24 +36,17 @@ function ThemeSwitch() {
     }
 
 
-
-
-
     return (
-        <div className="light-dark-mode">
-            <div className="light-dark-mode-text">
-                <h2>Tryb jasny/ciemny</h2>
-                <p>Strona posiada tryb jasny i ciemny. Możesz zmienić go klikając w przycisk poniżej.</p>
-            </div>
-            <div className="light-dark-mode-button">
-                <button onClick={toggleDarkMode} className="light-dark-mode-button-dark">Ciemny</button>
+        <div>
+            <div className="theme-switch">
+                <button onClick={toggleDarkMode} className="dark-toggle"></button>
             </div>
             <div className={"accents-buttons"}>
-                <button className={"accents-buttons-button"} onClick={ changeTheme("red") }>Czerwony</button>
-                <button className={"accents-buttons-button"} onClick={ changeTheme("blue") }>Niebieski</button>
-                <button className={"accents-buttons-button"}>Zielony</button>
-                <button className={"accents-buttons-button"}>Żółty</button>
-                <button className={"accents-buttons-button"}>Fioletowy</button>
+                <button className="accents-button red" onClick={() => changeTheme("red")}>Red</button>
+                <button className="accents-button indigo" onClick={() => changeTheme("indigo")}>Indigo</button>
+                <button className="accents-button salmon" onClick={() => changeTheme("salmon")}>Salmon</button>
+                <button className="accents-button purple" onClick={() => changeTheme("purple")}>Purple</button>
+                <button className="accents-button clear" onClick={() => changeTheme("")}>Clear</button>
             </div>
         </div>
     );

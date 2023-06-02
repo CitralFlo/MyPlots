@@ -5,10 +5,10 @@ import reportWebVitals from './reportWebVitals';
 import Plots from "./components/Plot/Plots";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About/About";
-/*import Skills from "./components/Skills/Skills";*/
-/*import Footer from "./components/Footer/Footer";*/
+import Skills from "./components/Skills/Skills";
+import Footer from "./components/Footer/Footer";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
-/*import Opensource from "./components/Opensource/Opensource";*/
+import Opensource from "./components/Opensource/Opensource";
 
 
 const App = () => {
@@ -32,8 +32,7 @@ const App = () => {
                                 <NavBar />
                                 <Plots />
                                 <About />
-                                {/*<Skills />*/}
-                                {/*<Footer />*/}
+                                <Footer />
                         </div>
                     )}
             </React.StrictMode>

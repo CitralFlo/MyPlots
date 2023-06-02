@@ -4,15 +4,48 @@
     display: flex;
     position: center;
     align-items: center;
-    marign: auto;
-    margin-top: 20px;
-    padding: 20vh;
+    justify-content: center;
+    margin-top: 50px;
+
 
 }
+
 .Title {
     position: center;
+    padding: 10%;
 }
+
+.About-desc {
+    padding: 10%;
+}
+
 .About-3D {
     width: 50vh;
+    height: 50vw;
+    border: #9d9d9d 4px solid;
+}
+
+.About-text {
     height: 50vh;
+    width: 30vh;
+    border: #9d9d9d 4px solid;
+
+}
+
+@media screen and (max-width: 768px) {
+    .About {
+        flex-direction: column;
+    }
+
+    .About-3D {
+        width: 50vh;
+        height: 50vw;
+        border: #9d9d9d 4px solid;
+    }
+
+    .About-text {
+        height: 50vh;
+        width: 30vh;
+        border: #9d9d9d 4px solid;
+    }
 }

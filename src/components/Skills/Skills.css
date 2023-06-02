@@ -1,0 +1,8 @@
+.Skills-text-box {
+    display: none;
+}
+
+.Skills-text-box.active {
+    display: flex;
+
+}

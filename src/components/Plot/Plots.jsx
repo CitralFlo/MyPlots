@@ -72,7 +72,7 @@ function PlotSetup(props) {
 }
 
 
-export const Plots = () => {
+const Plots = () => {
     return (
         <div className="plots-div">
             <h1 className="plots-title">Moje działki</h1>
@@ -90,3 +90,5 @@ export const Plots = () => {
 
     )
 }
+
+export default Plots;

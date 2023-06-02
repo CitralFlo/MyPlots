@@ -1,6 +1,26 @@
 .dark {
     background-color: var(--main-bg-color);
-    color: white;
-    transition: background-color 2s ease ;
+    color: var(--main-text-color);
+    transition: background-color 2s ease;
 }
 
+.dark-toggle {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    transition: background-color 1s ease;
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+.theme-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accents-button {
+    margin: 5px;
+    padding: 5px;
+}

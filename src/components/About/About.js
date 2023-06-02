@@ -97,10 +97,11 @@ export const About = () => {
 
             <div className="About-text">
                 <h1 className="Title">About Me</h1>
-                <p className='About-desc'>I'm a young developer in love with Minecraft. It's a long way to go for me, but I want to learn everything to optimize life of others. </p>
+                <p className='About-desc'>I'm a young developer in love with Minecraft.
+                    It's a long way to go for me, but I want to learn everything to optimize life of others. </p>
             </div>
             <div className="About-3D">
-                <Canvas dpr={[1, 2]} camera={{position: [0, 40, 40], fov: 80, near: 1}} className="3D-canvas">
+                <Canvas dpr={[1, 2]} camera={{position: [0, 60, 80], fov: 80, near: 1}} className="3D-canvas">
 
 
                     <Stars/>
