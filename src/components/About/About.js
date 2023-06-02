@@ -1,10 +1,9 @@
-import React, {Suspense, useRef} from "react";
+import React, { useRef} from "react";
 import './About.css';
 import {
     Float,
     Plane,
     Stars,
-    useAnimations,
     useTexture
 } from "@react-three/drei";
 import {Canvas} from "@react-three/fiber";
@@ -19,23 +18,21 @@ import {LinearEncoding} from "three";
 
 function Model(props) {
     const group = useRef()
-    const {nodes, materials, animations} = useGLTF('/assets/About/CitralFlo/mc_model-transformed.glb')
+    const {nodes, materials} = useGLTF('/assets/About/CitralFlo/mc_model-transformed.glb')
     const texture = useTexture('/assets/About/CitralFlo-texture.png')
-    const [colorMap] = useTexture([
-        '/assets/About/CitralFlo-texture.png',
-    ])
+
     texture.magFilter=THREE.NearestFilter;
     materials.Char.map = texture;
     materials.Char.normalMap = texture;
 
-    const {actions} = useAnimations(animations, group)
+
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Sketchfab_Scene">
                 <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={1.67}>
                     <group name="root">
                         <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
-                            <group name="Alex_18" position={[-0.01, 1, -0.03]} scale={0.62}>
+                            <group name="Alex_18" position={[-0.01, 1, -0.03]} scale={0.82}>
                                 <group name="GLTF_created_0">
                                     <mesh>
 
@@ -97,7 +94,7 @@ export const About = () => {
                 <p className="Skin">{t('About.Skin')}</p>
             </div>
             <div className="About-3D">
-                <Canvas dpr={[1, 2]} camera={{position: [0, 60, 80], fov: 80, near: 1}} className="3D-canvas">
+                <Canvas dpr={[1, 2]} camera={{position: [0, 60, 80], fov: 65, near: 1}} className="3D-canvas">
 
 
                     <Stars/>

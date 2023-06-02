@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
 }
 
 .logo {
@@ -21,16 +21,15 @@
     border: none;
     border-radius: 5px;
     background-color: transparent;
-    color: #fff;
+    color: var(--main-text-color);
     font-size: 1.5vw;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .nav-button:hover,
 .lang-button:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: var(--main-bg-color);
+    color: var(--accent-color);
 }
 .backButton {
     position: fixed;
@@ -45,14 +44,14 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: #9d9d9d 4px solid;
-    background: #9d9d9d;
+    border: var(--accent-color) 4px solid;
+    background: var(--secondary-bg-color);
     transition: 0.3s ease-in-out;
 }
 
 .arrowUp:hover {
-    background: #333;
-    border: #333 4px solid;
+    background: var(--accent-color);
+    border: var(--secondary-accent-color) 4px solid;
 }
 @media screen and (max-width: 1100px) {
     /* Styles for screens with a maximum width of 768 pixels */

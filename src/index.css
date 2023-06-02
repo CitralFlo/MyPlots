@@ -13,7 +13,7 @@
     --main-bg-color: #dadada;
     --secondary-bg-color: #f5f5f5;
 
-    --main-text-color: #333;
+    --main-text-color: #1e1e1e;
     --secondary-text-color: #5e5e5e;
 
     --accent-color: #282828;
@@ -21,7 +21,7 @@
 }
 
 .red {
-    --main-text-color: #f8f2dc;
+
     --secondary-text-color: #dea47e;
 
     --accent-color: #881600;
@@ -29,7 +29,7 @@
 }
 
 .indigo {
-    --main-text-color: #dbf8fa;
+
     --secondary-text-color: #dbdcfa;
 
     --accent-color: #424476;
@@ -37,7 +37,7 @@
 }
 
 .salmon {
-    --main-text-color: #ffffeb;
+
     --secondary-text-color: #efefd0;
 
     --accent-color: #f3938c;
@@ -45,7 +45,7 @@
 }
 
 .purple {
-    --main-text-color: #c8abfd;
+
     --secondary-text-color: #dfa2fa;
 
     --accent-color: #866aef;

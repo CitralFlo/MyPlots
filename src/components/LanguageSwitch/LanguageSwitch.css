@@ -51,7 +51,7 @@
 button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--main-text-color);
     font-size: 20px;
     cursor: pointer;
     transition: color 0.5s;

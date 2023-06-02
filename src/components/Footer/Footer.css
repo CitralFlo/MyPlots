@@ -1,10 +1,13 @@
 .Footer {
+    margin-top: 3rem;
     width: 100%;
     height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    color: var(--main-text-color);
+    background-color: var(--secondary-bg-color);
 }
 
 .icon {
@@ -36,7 +39,7 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #464545;
+    background-color: var(--main-bg-color);
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -45,7 +48,7 @@
 }
 
 .Link-list li:hover {
-    color: white;
+    color: var(--accent-color);
     text-shadow: #cccccc 0 0 20px;
     transition: 0.5s ease-in-out;
 
@@ -53,7 +56,7 @@
 
 .Link-element {
     text-decoration: none;
-    color: darkgray;
+    color: var(--main-text-color);
     position: center;
     align-items: center;
     display: flex;
@@ -70,15 +73,16 @@
     margin: 0;
     text-align: center;
     display: grid;
+
 }
 
 .Footer-button {
     width: 100%;
     height: 40px;
-    background-color: #464545;
+    background-color: var(--main-bg-color);
     border: none;
     border-radius: 10px;
-    color: white;
+    color: var(--main-text-color);
     font-size: 20px;
     font-family: 'Prompt', sans-serif;
     transition: 0.3s ease-in-out;
@@ -100,6 +104,7 @@
     align-items: center;
     position: center;
     cursor: crosshair;
+    color: var(--accent-color);
 }
 
 @media screen and (max-width: 1000px) {
