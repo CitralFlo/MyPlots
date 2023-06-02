@@ -1,0 +1,67 @@
+.LanguageSwitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.switch-icon {
+    width: 30px;
+    height: 30px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.switch-arrow.active {
+    transform: rotate(360deg);
+}
+.switch-arrow {
+    transition: transform 0.5s;
+    transform: rotate(180deg);
+}
+.language-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.5s;
+
+}
+
+.link-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.link-list.active {
+    display: none;
+    opacity: 0;
+}
+.link-list button {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.5s;
+
+}
+.flag-stripe {
+    width: 20px;
+    height: 10px;
+}
+.flag-img {
+    width: 20px;
+    height: 20px;
+}

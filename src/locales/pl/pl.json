@@ -1,0 +1,30 @@
+{
+  "NavBar": {
+    "Plots": "Działki",
+    "About": "O mnie"
+  },
+  "Plots": {
+    "Title": "Moje działki",
+    "Description": "To są moje działki, które stworzyłem na małym polskim serwerze Minecraft. Rozmiar działek zawsze wynosił 10 bloków na 10 bloków. Działki te zostały stworzone w latach 2021-2023, a niektóre z nich wciąż można zobaczyć w grze. Zasoby użyte do ich budowy były ograniczone i miały specjalną wartość na serwerze.",
+    "Plot": "Działka",
+    "Number": "numer",
+    "waski021": "Działka zawiera małe i proste igloo, które pasuje do zimnego serca właściciela. Igloo zbudowane jest z bloków lodu, śniegu i białej wełny. Wewnątrz znajduje się wejście do małej jaskini.",
+    "junglewoods": "Działka zawiera ikoniczne logo marki odzieżowej Vlone. Działka ma być pomnikiem po moim przyjacielu - Junglewoods. Świecący netherrack nadaje tej działce sakralny wygląd.",
+    "gothbrutality": "Działka zawiera głowę właściciela wykonaną z wełny. Wewnątrz znajduje się mały pokój z unikalnymi przedmiotami zebranymi przez właściciela.",
+    "1mph": "Działka wygląda jak piękny ogród o naturalistycznym wyglądzie. W centrum działki znajduje się wejście - spadek - do podziemnego pomieszczenia.",
+    "hydroksyzine": "Działka zawiera banery związane z nazwą właściciela. Działka ma wygląd przypominający Nether. Z kominkiem i netherackiem wygląda jak małe piekło.",
+    "kvdzi": "Miejsce o piekielnym wyglądzie, z konstrukcją kostną, przedstawiającą kręgosłup jakiegoś stworzenia. Działka ma wejście do piwnicy, gdzie znajdują się dekoracje ścienne i pewne elementy konstrukcyjne."
+  },
+  "About": {
+    "Title": "O mnie",
+    "Description": "Jestem młodym studentem, który w tym roku kończy studia na Politechnice Warszawskiej. Podczas pandemii znalazłem się w gronie przyjaciół, grając na różnych serwerach Minecraft. Ta strona to podsumowanie moich budowli. Mam nadzieję, że cieszy Cię ich oglądanie tak, jak ja cieszyłem się ich budowaniem.",
+    "Contact": "Skontaktuj się ze mną",
+    "Skin": "Po prawej stronie możesz zobaczyć mój skin Minecraft, oparty na modelu Minecraft stworzonym w React Three Fiber."
+  },
+  "Footer": {
+    "Copywrite": "2023 CitralFLo | Wszelkie prawa zastrzeżone.",
+    "Links": "Linki",
+    "All": "To wszystko",
+    "Back": "Powrót na górę"
+  }
+}

@@ -70,19 +70,24 @@
 }
 
 .plots-desc {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1rem;
+    text-align: center;
+
     position: center;
 border-bottom: black solid 3px;
 
 }
 
 .plot-desc {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .plot-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0;
 }

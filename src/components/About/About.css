@@ -12,23 +12,31 @@
 
 .Title {
     position: center;
-    padding: 10%;
+    padding: 5%;
+    text-align: center;
 }
 
 .About-desc {
-    padding: 10%;
+    padding: 5%;
+    margin: 0;
+    text-align: justify;
+}
+.Skin {
+    margin: 0;
+    padding: 5%;
+    text-align: justify;
 }
 
 .About-3D {
-    width: 50vh;
-    height: 50vw;
-    border: #9d9d9d 4px solid;
+    width: 40vw;
+    height: 50vh;
+    border: #9d9d9d 2px solid;
 }
 
 .About-text {
-    height: 50vh;
-    width: 30vh;
-    border: #9d9d9d 4px solid;
+    height: fit-content;
+    width: 40vw;
+    border: #9d9d9d 2px solid;
 
 }
 

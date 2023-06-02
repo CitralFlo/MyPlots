@@ -1,0 +1,30 @@
+{
+  "NavBar": {
+    "Plots": "Plots",
+    "About": "About"
+  },
+  "Plots": {
+    "Title": "My plots",
+    "Description": "These are my plots, that I have created on small Polish minecraft server. The size of the plots was always 10 blocks x 10 blocks. The plots were created during 2021-2023 and some of them you can still see in game. The resources used to build them ware limited and had special value on the server.",
+    "Plot": "Plot",
+    "Number": "number",
+    "waski021": "The plot contains small and simple igloo, that matches cold heart of the owner. The igloo is build of ice blocks, snow and white wool. Inside you can find the entrance to small cave.",
+    "junglewoods": "The plot contains iconic logo of street-wear bran Vlone. The plot is set to be a monument after my friend - Junglewoods. The light up netherrack gives this plot a sacred look.",
+    "gothbrutality": "The plot contains the head of the owner made from wool. Inside of it you can find small room with unique items collected by the owner. ",
+    "1mph": "The plot looks like beautiful garden with naturalistic look. In the center of the plot you can find the entrance - drop - to the underground room.",
+    "hydroksyzine": "The plot contains banners related to the name of the owner. Plot is set to have a nether like look. With fireplace and netherack it looks like a small hell.",
+    "kvdzi": "Hellish looking place, with bone structure representing spine of some beast. The plot has an entrance to the basement, where you can find wall decorations and some structural elements."
+  },
+  "About": {
+    "Title": "About me",
+    "Description": "I am young student on my graduation year on Polytechnic in Warsaw. During the time of pandemic I found myself playing along with friends on many minecraft servers. This site is a highlight of my builds. I hope you enjoy seeing them as much as I enjoyed building them.",
+    "Contact": "Contact me",
+    "Skin": "On the right you can see my minecraft skin, based on minecraft model made in React Three Fiber."
+  },
+  "Footer": {
+    "Copywrite": "2023 CitralFLo | All rights reserved.",
+    "Links": "Links",
+    "All": "Thats all",
+    "Back": "Back to top"
+  }
+}

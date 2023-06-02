@@ -2,9 +2,11 @@ import './plot.css';
 import PopupPicture from "./Popup/PopupPicture";
 import {plots} from './Plot.js';
 import React, {useState} from "react";
+import { useTranslation } from 'react-i18next';
 
 
 function PlotSetup(props) {
+    const { t } = useTranslation();
     const item = props.item;
     const [currentPlot, setCurrentPlot] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
@@ -47,8 +49,8 @@ function PlotSetup(props) {
 
 
             <label className="counter">{displayCurrent} / {maxPictures + 1}</label>
-            <h1 className="plot-title">Działka {item.name} nr {item.serial} </h1>
-            <h2 className="plot-desc">{item.desc}</h2>
+            <h1 className="plot-title">{t(`Plots.Plot`)} {item.name} {t(`Plots.Number`)} {item.serial}</h1>
+            <h2 className="plot-desc">{t(`Plots.${item.name}`)}</h2>
 
 
             <PopupPicture open={isOpen} onClose={() => setIsOpen(false)}>
@@ -73,11 +75,11 @@ function PlotSetup(props) {
 
 
 const Plots = () => {
+    const { t } = useTranslation();
     return (
         <div className="plots-div">
-            <h1 className="plots-title">Moje działki</h1>
-            <p className="plots-desc">Oto stworzone moimi rękoma działki, ze specjalnie zcraftowanych pomysłów na
-                potrzeby właściela</p>
+            <h1 className="plots-title">{t('Plots.Title')}</h1>
+            <p className="plots-desc">{t('Plots.Description')}</p>
 
             <div className="plots">
                 {plots.map((item, index) => {

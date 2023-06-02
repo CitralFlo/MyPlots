@@ -1,20 +1,16 @@
 import React, {Suspense, useRef} from "react";
 import './About.css';
 import {
-    Environment,
     Float,
-    OrbitControls,
-    PerspectiveCamera,
     Plane,
-    Sphere,
     Stars,
     useAnimations,
     useTexture
 } from "@react-three/drei";
-import {Canvas, useLoader, useFrame} from "@react-three/fiber";
-import {Physics, useBox, usePlane} from "@react-three/cannon";
+import {Canvas} from "@react-three/fiber";
+import {Physics} from "@react-three/cannon";
 import {useGLTF} from "@react-three/drei";
-import {TextureLoader} from 'three/src/loaders/TextureLoader';
+import {useTranslation} from "react-i18next";
 
 
 import * as THREE from 'three';
@@ -32,7 +28,6 @@ function Model(props) {
     materials.Char.map = texture;
     materials.Char.normalMap = texture;
 
-    console.log(materials.Char.map);
     const {actions} = useAnimations(animations, group)
     return (
         <group ref={group} {...props} dispose={null}>
@@ -91,14 +86,15 @@ function Moon() {
 
 
 export const About = () => {
-
+    const { t } = useTranslation();
     return (
         <div className="About">
 
             <div className="About-text">
-                <h1 className="Title">About Me</h1>
-                <p className='About-desc'>I'm a young developer in love with Minecraft.
-                    It's a long way to go for me, but I want to learn everything to optimize life of others. </p>
+                <h1 className="Title">{t('About.Title')}</h1>
+                <p className='About-desc'>{t('About.Description')}</p>
+
+                <p className="Skin">{t('About.Skin')}</p>
             </div>
             <div className="About-3D">
                 <Canvas dpr={[1, 2]} camera={{position: [0, 60, 80], fov: 80, near: 1}} className="3D-canvas">

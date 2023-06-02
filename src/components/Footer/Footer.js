@@ -1,7 +1,9 @@
 import './Footer.css';
 import {useRef, useState} from "react";
+import {useTranslation} from "react-i18next";
 
 export const Footer = () => {
+    const {t} = useTranslation();
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -15,7 +17,7 @@ export const Footer = () => {
     return (
         <div className="Footer">
             <div className="Links">
-                <h3 onClick={() => setActive(!active)}>Linki {active ? "▽" : "△"}</h3>
+                <h3 onClick={() => setActive(!active)}>{t('Footer.Links')} {active ? "▽" : "△"}</h3>
                 <ul className={`'Link-list ${active ? "" : "active"}`}>
                     <li>
                         <a href="https://github.com/CitralFlo" target="_blank" className="Link-element" rel="noopener noreferrer">
@@ -40,12 +42,12 @@ export const Footer = () => {
             </div>
 
             <div className="Footer-credits">
-                <p>2023 CitralFlo | Wysztkie prawa zastrzeżone</p>
+                <p>{t('Footer.Copywrite')}</p>
             </div>
 
             <div className="Footer-back-button">
-                <h3>To wszystko</h3>
-                <button className="Footer-button" onClick={scrollToTop}>Wróć na górę</button>
+                <h3>{t('Footer.All')}</h3>
+                <button className="Footer-button" onClick={scrollToTop}>{t('Footer.Back')}</button>
             </div>
 
 
