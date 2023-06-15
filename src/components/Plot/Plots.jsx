@@ -77,7 +77,7 @@ function PlotSetup(props) {
 const Plots = () => {
     const { t } = useTranslation();
     return (
-        <div className="plots-div">
+        <section className="plots-div">
             <h1 className="plots-title">{t('Plots.Title')}</h1>
             <p className="plots-desc">{t('Plots.Description')}</p>
 
@@ -88,7 +88,7 @@ const Plots = () => {
                 })}
             </div>
 
-        </div>
+        </section>
 
     )
 }

@@ -8,10 +8,44 @@
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     transition: background-color 1s ease;
-    width: 20px;
-    height: 20px;
-    border-radius: 45%;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
     cursor: pointer;
+    position: relative;
+}
+.sun {
+    width: 100%;
+    display: none;
+
+
+}
+.moon {
+    position: relative;
+    left: 0;
+    display: block;
+}
+
+.moon:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 0.3s;
+}
+
+.dark-toggle.active .sun {
+    display: block;
+    position: relative;
+    right: -35%;
+    justify-content: right;
+    transition: ease-in-out 0.3s;
+}
+
+.dark-toggle.active .sun:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 0.3s;
+}
+
+.dark-toggle.active .moon {
+    display: none;
 }
 
 .theme-switch {
@@ -20,8 +54,33 @@
     justify-content: center;
     color: var(--main-text-color);
 }
-
+.accents-buttons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
 .accents-button {
-    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    border: var(--accent-color) 3px solid;
+    margin: auto;
     padding: 5px;
+    color: var(--secondary-accent-color);
+
+}
+.accents-button:hover {
+    background-color: var(--main-bg-color);
+    border: var(--secondary-accent-color) 3px solid;
+    color: var(--accent-color);
+    transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1100px) {
+    .accents-button {
+        flex-direction: column;
+    }
 }

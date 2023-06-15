@@ -1,10 +1,25 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 20px;
     background-color: var(--secondary-bg-color);
     color: var(--main-text-color);
+}
+.settings-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.settings-icon {
+    display: none;
+}
+.cross {
+    display: none;
 }
 
 .logo {
@@ -55,8 +70,37 @@
 }
 @media screen and (max-width: 1100px) {
     /* Styles for screens with a maximum width of 768 pixels */
-    .arrowUp {
+    .logo {
+        width: 40%;
+        height: auto;
+    }
+    .settings-icon {
+        display: block;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+    }
+    .settings-icon.active {
         display: none;
     }
-
+    .settings-menu {
+        display: none;
+    }
+    .settings-menu.active {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .nav-button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    .navbar {
+        transition: height 0.3s ease-in-out;
+        height: auto;
+    }
+    .cross {
+        display: block;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+    }
 }

@@ -6,7 +6,7 @@ export const plots = [
             'assets/plot-pictures/plot-waski021.webp',
             'assets/plot-pictures/plot-waski021-1.webp',
             'assets/plot-pictures/plot-waski021-2.webp',
-            ],
+        ],
     },
     {
         serial: 1,
@@ -14,7 +14,7 @@ export const plots = [
         links: [
             'assets/plot-pictures/plot-junglewoods.webp',
             'assets/plot-pictures/plot-junglewoods-1.webp',
-            ],
+        ],
     },
     {
         serial: 2,
@@ -22,7 +22,7 @@ export const plots = [
         links: [
             'assets/plot-pictures/plot-gothbrutality.webp',
             'assets/plot-pictures/plot-gothbrutality-1.webp',
-            ],
+        ],
     },
     {
         serial: 1,
@@ -31,7 +31,7 @@ export const plots = [
             'assets/plot-pictures/plot-1mph.webp',
             'assets/plot-pictures/plot-1mph-1.webp',
             'assets/plot-pictures/plot-1mph-2.webp',
-            ],
+        ],
     },
     {
         serial: 1,
@@ -41,7 +41,7 @@ export const plots = [
             'assets/plot-pictures/plot-hydroksyzine-1.webp',
             'assets/plot-pictures/plot-hydroksyzine-2.webp',
             'assets/plot-pictures/plot-hydroksyzine-3.webp',
-            ],
+        ],
     },
     {
         serial: 2,
@@ -51,7 +51,23 @@ export const plots = [
             'assets/plot-pictures/plot-kvdzi-1.webp',
             'assets/plot-pictures/plot-kvdzi-2.webp',
             'assets/plot-pictures/plot-kvdzi-3.webp',
-            ],
+        ],
+    },
+    {
+        serial: 2,
+        name: 'przedawkowalam',
+        links: [
+            'assets/plot-pictures/plot-przedawkowalam.webp',
+            'assets/plot-pictures/plot-przedawkowalam-1.webp',
+            'assets/plot-pictures/plot-przedawkowalam-2.webp',
+        ],
+    },
+    {
+        serial: 0,
+        name: 'lulu',
+        links: [
+            'assets/plot-pictures/plot-lulu.webp',
+        ]
     }
 ]
 

@@ -7,7 +7,7 @@ import {HiChevronDoubleDown} from "react-icons/hi";
 
 const LanguageSwitch = () => {
     const {i18n} = useTranslation();
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
 
     const handleLanguageChange = (language) => {
         i18n.changeLanguage(language);
@@ -16,7 +16,7 @@ const LanguageSwitch = () => {
 
     return (
         <div className="LanguageSwitch">
-            <button className="language-button" onClick={() => setActive(!active)}>
+            <button className={`language-button ${active ? "" : "active"}`} onClick={() => setActive(!active)}>
                 <FaLanguage className="switch-icon"/>
                 <HiChevronDoubleDown className={`switch-arrow ${active ? "" : "active"}`}/>
             </button>
