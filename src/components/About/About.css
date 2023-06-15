@@ -46,14 +46,16 @@
     }
 
     .About-3D {
-        width: 50vh;
-        height: 50vw;
+        width: 60vw;
+        height: 50vh;
         border: #9d9d9d 4px solid;
+        border-radius: 15%;
     }
 
     .About-text {
-        height: 50vh;
-        width: 30vh;
+        height: auto;
+        width: 60vw;
         border: #9d9d9d 4px solid;
+        border-radius: 15%;
     }
 }
