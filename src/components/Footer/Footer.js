@@ -12,33 +12,32 @@ export const Footer = () => {
         });
     }
 
-   const [active, setActive] = useState(true);
+    const [active, setActive] = useState(true);
 
     return (
         <div className="Footer">
             <div className="Links">
-                <h3 className={`links-button ${!active ? "" : "active"}`} onClick={() => setActive(!active)}>{t('Footer.Links')} {active ? "△" : "▽"}</h3>
-                <ul className={`link-list ${active ? "" : "active"}`}>
-                    <li>
-                        <a href="https://github.com/CitralFlo" target="_blank" className="Link-element" rel="noopener noreferrer">
-                            <img src="/assets/Footer/github.svg" alt="GitHub" className="icon-img"/>
-                            GitHub
-                        </a>
+                <h3 className="links-button" > {t('Footer.Links')} </h3>
 
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/micha%C5%82-wojtas-5a0663228/" target="_blank" className="Link-element" rel="noopener noreferrer">
-                            <img src="/assets/Footer/linkedin.svg" alt="LinkedIn" className="icon-img"/>
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/citralflo/" target="_blank" className="Link-element" rel="noopener noreferrer">
-                            <img src="/assets/Footer/instagram.svg" alt="Instagram" className="icon-img"/>
-                            Instagram
-                        </a>
-                    </li>
-                </ul>
+                <a href="https://github.com/CitralFlo" target="_blank" className="Link-element"
+                   rel="noopener noreferrer">
+                    <img src="/assets/Footer/github.svg" alt="GitHub" className="icon-img" />
+                    <span className={"button-text"}>GitHub</span>
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/citralflo/" target="_blank"
+                   className="Link-element" rel="noopener noreferrer">
+                    <img src="/assets/Footer/linkedin.svg" alt="LinkedIn" className="icon-img" />
+                    <span className={"button-text"}>LinkedIn</span>
+                </a>
+
+                <a href="https://www.instagram.com/citralflo/" target="_blank" className="Link-element"
+                   rel="noopener noreferrer">
+                    <img src="/assets/Footer/instagram.svg" alt="Instagram" className="icon-img" />
+                    <span className={"button-text"}>Instagram</span>
+                </a>
+
             </div>
 
             <div className="Footer-credits">

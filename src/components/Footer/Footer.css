@@ -34,24 +34,20 @@
     display: none;
 }
 
+.Links {
+    width: fit-content;
+    height: fit-content;
+}
+
 .links-button {
-    transition: transform 0.5s;
-    transform: translateY(4rem);
     margin-top: 2px;
     margin-bottom: 0;
     text-align: center;
     user-select: none;
-    cursor: pointer;
+
     position: center;
     align-content: center;
     align-items: center;
-}
-
-.links-button.active {
-    height: fit-content;
-    transform: translateY(0);
-    transition: transform 0.5s;
-
 }
 
 .link-list {
@@ -72,14 +68,13 @@
     color: var(--accent-color);
     text-shadow: #cccccc 0 0 20px;
     transition: 0.5s ease-in-out;
-
 }
 
 
 .Link-element {
     text-decoration: none;
     color: var(--main-text-color);
-    align-items: self-start;
+
     display: flex;
     height: 40px;
 }
@@ -87,7 +82,6 @@
 .Link-element:hover img {
     filter: invert(30%);
     transition: 0.5s ease-in-out;
-
 }
 
 
@@ -124,8 +118,33 @@
 
 @media screen and (max-width: 1000px) {
     .Footer {
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
+        align-content: center;
+        align-items: center;
+    }
+    .button-text {
+        display: none;
+    }
+    .link-list {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .Links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .links-button {
+        display: none;
+    }
+
+    .Footer-back-button {
+        display: none;
     }
 
 }
